@@ -28,6 +28,9 @@
             return dbBuilder;
         }
 
+        /// <summary>
+        /// This class is responsible to build object
+        /// </summary>
         public class DatabaseBuilder()
         {
 
