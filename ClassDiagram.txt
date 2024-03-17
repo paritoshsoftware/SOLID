@@ -1,0 +1,34 @@
+
+
+To create class diagram always use visulization technniuqe 
+
+
+     Game                                   Player                Symbol
+-----------------                     ------------------       ---------------             
+   -Board                                 -Symbol                -Char
+   -List<Player>                          -id       
+                                          -name
+                                          -gameId
+                                          -board
+                                          -score
+                                          -playerType - enum
+                                         exntends 
+                                           Bot
+                                     --------------------
+                                           dificultyLevel 
+ 
+   PlayerType                           Board
+ ---------------------              ----------------------
+      Human                             boardId 
+      Bot                               size
+                                        List<List<cell>>()
+
+
+                                        Cell
+                                ------------------------ 
+                                      Symbol 
+                                      row
+                                      col
+                                      CellState -enum(Filled empty blovked)
+
+                                      Resume at 44
