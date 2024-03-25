@@ -6,6 +6,7 @@ internal class Program
     {
         try
         {
+
             var dbObject =  GetDb();
 
             if(dbObject!=null) { Console.WriteLine("Connected  To DB"); }
