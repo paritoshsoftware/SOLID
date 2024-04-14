@@ -1,6 +1,6 @@
 ﻿namespace NullPointerException
 {
-    internal class Car 
+    internal class Car : IVehicle
     {
         public string GetInformation()
         {

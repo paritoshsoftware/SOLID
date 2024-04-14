@@ -5,9 +5,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        VehicleFactory vehicleFactoryObject = new VehicleFactory("Truck");
+        VehicleFactory vehicleFactoryObject = new VehicleFactory("Car");
         var result = vehicleFactoryObject.GetVehicle();
-        Console.WriteLine($"Vehicle Type   : {result.GetInformation()}");
+        Console.WriteLine($"Vehicle Type  : {result.GetInformation()}");
         Console.WriteLine($"Vehicle Price : {result.GetPrice()}");
     }
         
