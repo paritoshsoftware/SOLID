@@ -11,6 +11,7 @@
     <ProjectReference Include="..\AITest\AITest.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
     <ProjectReference Include="..\GameController\GameController.csproj" />
+    <ProjectReference Include="..\NullPointerException\NullPointerException.csproj" />
   </ItemGroup>
 
 </Project>

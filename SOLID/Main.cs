@@ -1,23 +1,16 @@
 ﻿using DesignPattern;
 using Game;
+using NullPointerException;
 internal class Program
 {
     private static void Main(string[] args)
     {
-        try
-        {
-
-            var dbObject =  GetDb();
-
-            if(dbObject!=null) { Console.WriteLine("Connected  To DB"); }
-
-        }catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message.ToString());   
-        }
-
+        VehicleFactory vehicleFactoryObject = new VehicleFactory("Truck");
+        var result = vehicleFactoryObject.GetVehicle();
+        Console.WriteLine($"Vehicle Type   : {result.GetInformation()}");
+        Console.WriteLine($"Vehicle Price : {result.GetPrice()}");
     }
-
+        
     public static  Database GetDb()
     {
         var database = Database.Builder().
